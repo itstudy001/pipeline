@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    stages{
+        stage('Compile') {
+            steps{
+                echo 'Compile Successfully'
+            }
+        }
+
+        stage('Junit') {
+            steps{
+                echo 'JUnit Passed Successfully'
+            }
+        }
+
+        stage('Code Analysis') {
+            steps{
+                echo 'Code Analysis Completed Successfully'
+            }
+        }
+    
+        stage('Deploy') {
+            steps{
+                echo 'Deployed Successfully'
+            }
+        }
+    }
+}
